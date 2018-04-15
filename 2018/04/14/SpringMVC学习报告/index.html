@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      SpringMVC学习报告 | Cicicigar-github 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Cicicigar">
+    
+    
+
+    <meta name="description" content="SpringMVC 学习报告15331010 曹思佳  Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性">
+<meta name="keywords" content="homework,System&#39;s Analysis and Design,dramatic tickets">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringMVC学习报告 | Cicicigar-github">
+<meta property="og:url" content="http://yoursite.com/2018/04/14/SpringMVC学习报告/index.html">
+<meta property="og:site_name" content="Cicicigar-github">
+<meta property="og:description" content="SpringMVC 学习报告15331010 曹思佳  Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-4536e692de5413bf41a4a5c030f393bb_hd.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-13c8c23b5e6953563f49f876e3bb1cc9_hd.jpg">
+<meta property="og:updated_time" content="2018-04-15T03:39:25.284Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SpringMVC学习报告 | Cicicigar-github">
+<meta name="twitter:description" content="SpringMVC 学习报告15331010 曹思佳  Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性">
+<meta name="twitter:image" content="https://pic3.zhimg.com/80/v2-4536e692de5413bf41a4a5c030f393bb_hd.jpg">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Cicicigar-github</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">SpringMVC学习报告</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2018-04-14" class="post-meta__date date">2018-04-14</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/System-s-Analysis-and-Design/">System's Analysis and Design</a>, <a class="tags-link" href="/tags/dramatic-tickets/">dramatic tickets</a>, <a class="tags-link" href="/tags/homework/">homework</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h3 id="SpringMVC-学习报告"><a href="#SpringMVC-学习报告" class="headerlink" title="SpringMVC 学习报告"></a>SpringMVC 学习报告</h3><p>15331010 曹思佳</p>
+<ol>
+<li><p>Spring: DI / AOP<br>Spring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。<br>其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性，极大地简化开发。理解这两者是使用Spring框架的基础。<br>Spring框架对Java企业应用开发中的各类通用问题都进行了良好的抽象，因此也能够把应用各个层次所涉及的特定的功能和开发框架。Spring是一个极其优秀的一站式的Full-Stack集成框架，因此基于Spring核心，对Java应用开发中的各类通用问题几乎都提供了针对性的开发框架，比如你耳熟能详的Spring MVC，Spring Data。</p>
+</li>
+<li><p>Struct: MVC<br>Struct 是一个Java Web MVC开发框架。<br>Model，View和Controller的分开，是一种典型的关注点分离的思想，不仅使得代码复用性和组织性更好，使得Web应用的配置性和灵活性更好。</p>
+<ul>
+<li>模型 Model：封装与业务逻辑相关的数据和数据处理方法。</li>
+<li>视图 View：数据的逻辑层展现。</li>
+<li>控制器 Controller：响应请求，协调 Model 与 View。</li>
+</ul>
+</li>
+<li><p>Hibernate：ORM<br>ORM是Object Relation Mapping的缩写，顾名思义，即对象关系映射。<br>ORM是一种以面向对象的方式来进行数据库操作的技术。Web开发中常用的语言，都会有对应的ORM框架。而Hibernate就是Java开发中一种常用ORM框架，另一个现在流行的ORM框架是Mybatis。<br>简单地理解，通过Java进行数据库访问的正常流程可以分为以下几步：</p>
+<ol>
+<li>准备好SQL语句</li>
+<li>调用JDBC的API传入SQL语句，设置参数</li>
+<li>解析JDBC返回的结果</li>
+</ol>
+<p>这个过程实际上非常麻烦，比如：</p>
+<ul>
+<li>在Java代码中拼接SQL非常麻烦，而且易于出错</li>
+<li>JDBC的代码调用有很多重复性的代码</li>
+<li>从JDBC返回的结果转换成领域模型的Java对象很繁琐</li>
+</ul>
+<p>而使用ORM框架，则可以让我们用面向对象的方式来操作数据库，比如通过一个简单的函数调用就完成上面整个流程，直接返回映射为Java对象的结果。这个流程中很大一部分工作其实可以交给ORM自动化地帮我们执行。</p>
+</li>
+</ol>
+<p>经典架构图如下：<br><img src="https://pic3.zhimg.com/80/v2-4536e692de5413bf41a4a5c030f393bb_hd.jpg" alt="经典架构图"><br>SpringMVC 架构图如下：<br><img src="https://pic4.zhimg.com/80/v2-13c8c23b5e6953563f49f876e3bb1cc9_hd.jpg" alt="经典架构图"><br>Spring MVC提供了一个DispacherServlet（可以Spring MVC是以Servlet技术为基础的），这个Servlet把Web应用中Servlet中经常要实现的功能封装起来并提供一层公共抽象，想象对应于一个Web请求后端要做的事情。<br>有了Spring MVC，你只需写简单的POJO代码，就能完成这些繁琐的功能。<br>POJO是Plain Old Java Object的缩写，是软件开发大师Martin Fowler提出的一个概念，指的是一个普通Java类。也就说，你随便编写一个Java类，就可以称之为POJO。<br>而ORM的作用是提供与数据库操作的一层中间抽象，这样Model的代码自然会更加简单。<br>Spring MVC基本可以帮你屏蔽Servlet的API，ORM则可以帮你屏蔽JDBC的API了，也就是说你在更高的抽象层次上写程序了，更高的抽象层次一般意味着以更符合我们思维的方式来思考，自然效率更高。这事实上是软件技术发展的一个重要驱动力之一。你想想，从汇编语言发展出高级语言，从文件系统发展出数据库，其实本质规律是类似的。<br>Java类之间存在大量复杂的依赖关系，而Spring的核心功能依赖注入，正是用于管理Java对象之间的依赖关系，所以第一部分我们说Spring是一个一站式的粘合框架。</p>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
