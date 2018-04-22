@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      System-s-Analysis-and-Design-HW3 | Cicicigar-github 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="Cicicigar">
+    
+    
+
+    <meta name="description" content="个人作业用例建模 阅读 Asg_RH 文档，绘制用例图。 按 Task1 要求，请使用工具 UMLet，截图格式务必是 png 并控制尺寸。  选择你熟悉的定旅馆在线服务系统（或移动 APP），如绘制用例图。并满足以下要求：  对比 Asg_RH 用例图，请用色彩标注出创新用例或子用例。 尽可能识别外部系统，并用色彩标注新的外部系统和服务。    用红色标注出创新用例或子用例，现有的定旅馆在线服务">
+<meta name="keywords" content="homework,System&#39;s Analysis and Design">
+<meta property="og:type" content="article">
+<meta property="og:title" content="System-s-Analysis-and-Design-HW3 | Cicicigar-github">
+<meta property="og:url" content="http://yoursite.com/2018/04/21/System-s-Analysis-and-Design-HW3/index.html">
+<meta property="og:site_name" content="Cicicigar-github">
+<meta property="og:description" content="个人作业用例建模 阅读 Asg_RH 文档，绘制用例图。 按 Task1 要求，请使用工具 UMLet，截图格式务必是 png 并控制尺寸。  选择你熟悉的定旅馆在线服务系统（或移动 APP），如绘制用例图。并满足以下要求：  对比 Asg_RH 用例图，请用色彩标注出创新用例或子用例。 尽可能识别外部系统，并用色彩标注新的外部系统和服务。    用红色标注出创新用例或子用例，现有的定旅馆在线服务">
+<meta property="og:image" content="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/用例图1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/用例图2.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/hotel流程图.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/ATM流程图.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/退款流程图.png">
+<meta property="og:updated_time" content="2018-04-22T07:16:38.507Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="System-s-Analysis-and-Design-HW3 | Cicicigar-github">
+<meta name="twitter:description" content="个人作业用例建模 阅读 Asg_RH 文档，绘制用例图。 按 Task1 要求，请使用工具 UMLet，截图格式务必是 png 并控制尺寸。  选择你熟悉的定旅馆在线服务系统（或移动 APP），如绘制用例图。并满足以下要求：  对比 Asg_RH 用例图，请用色彩标注出创新用例或子用例。 尽可能识别外部系统，并用色彩标注新的外部系统和服务。    用红色标注出创新用例或子用例，现有的定旅馆在线服务">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/用例图1.png">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">Cicicigar-github</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">System-s-Analysis-and-Design-HW3</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2018-04-21" class="post-meta__date date">2018-04-21</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+             &#8226; 标签:
+            <font class="tags">
+              <a class="tags-link" href="/tags/System-s-Analysis-and-Design/">System's Analysis and Design</a>, <a class="tags-link" href="/tags/homework/">homework</a>
+            </font>
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h3 id="个人作业"><a href="#个人作业" class="headerlink" title="个人作业"></a>个人作业</h3><h4 id="用例建模"><a href="#用例建模" class="headerlink" title="用例建模"></a>用例建模</h4><ol>
+<li><p>阅读 Asg_RH 文档，绘制用例图。 按 Task1 要求，请使用工具 UMLet，截图格式务必是 png 并控制尺寸。<br><img src="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/用例图1.png" alt="TASK1用例图"></p>
+</li>
+<li><p>选择你熟悉的定旅馆在线服务系统（或移动 APP），如绘制用例图。并满足以下要求：</p>
+<ul>
+<li>对比 Asg_RH 用例图，请用色彩标注出创新用例或子用例。</li>
+<li>尽可能识别外部系统，并用色彩标注新的外部系统和服务。<br><img src="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/用例图2.png" alt="定旅馆在线服务系统用例图"></li>
+</ul>
+</li>
+</ol>
+<p>用红色标注出创新用例或子用例，现有的定旅馆在线服务系统在选择旅馆的方式和排序方式上有一些创新。<br>例如可以根据地区、关键字、价格区间等来挑选旅馆，根据价格和距离远近等进行排序等操作。<br>用蓝色标注出新的外部系统和服务，现有的定旅馆在线服务系统在支付方式上有一些创新。<br>例如可以使用微信、支付宝和信用卡等进行支付。</p>
+<ol>
+<li><p>对比两个时代、不同地区产品的用例图，总结在项目早期，发现创新的思路与方法。<br>创新思路与方法主要要根据用户的需求，提高用户的使用舒适度，增加新的创新用例子用例或外部服务，以吸引更多用户。</p>
+</li>
+<li><p>请使用 SCRUM 方法，在（任务b）用例图基础上，编制某定旅馆开发的需求 （backlog）。</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>NAME</th>
+<th>EST</th>
+<th>ITER</th>
+<th>IMP</th>
+<th>DEMO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>SEARCH</td>
+<td>5</td>
+<td>3</td>
+<td>50</td>
+<td>搜索酒店</td>
+</tr>
+<tr>
+<td>2</td>
+<td>CHOOSE</td>
+<td>3</td>
+<td>6</td>
+<td>30</td>
+<td>选择酒店</td>
+</tr>
+<tr>
+<td>3</td>
+<td>BOOKING</td>
+<td>3</td>
+<td>7</td>
+<td>30</td>
+<td>预定酒店</td>
+</tr>
+<tr>
+<td>4</td>
+<td>RESERVATION</td>
+<td>5</td>
+<td>7</td>
+<td>50</td>
+<td>订单信息</td>
+</tr>
+<tr>
+<td>5</td>
+<td>PAY</td>
+<td>10</td>
+<td>10</td>
+<td>50</td>
+</tr>
+</tbody>
+</table>
+<h4 id="业务建模"><a href="#业务建模" class="headerlink" title="业务建模"></a>业务建模</h4><ol>
+<li><p>在（任务b）基础上，用活动图建模找酒店用例。简述利用流程图发现子用例的方法。<br><img src="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/hotel流程图.png" alt="预定酒店流程图"><br>在构建流程图时，可以复用的业务或者技术就可以作为子用例。复杂业务分解也是发现子用例的时机</p>
+</li>
+<li><p>选择你身边的银行 ATM，用活动图描绘取款业务流程。<br><img src="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/ATM流程图.png" alt="ATM流程图"></p>
+</li>
+<li><p>查找淘宝退货业务官方文档，使用多泳道图，表达客户、淘宝网、淘宝商家服务系统、商家等用户和系统协同完成退货业务的过程。分析客户要完成退货业务，在淘宝网上需要实现哪些系统用例。<br><img src="https://raw.githubusercontent.com/Cicicigar/markdown_pics/master/退款流程图.png" alt="瑞款流程图"><br>系统用例：<br><services>pay、已买到的物品。</services></p>
+</li>
+</ol>
+<h4 id="用例文本编写"><a href="#用例文本编写" class="headerlink" title="用例文本编写"></a>用例文本编写</h4><p>在大作业基础上，分析三种用例文本的优点和缺点。</p>
+<ol>
+<li>brief<ul>
+<li>优点：简洁，能快速了解主题。</li>
+<li>缺点：只有主成功场景。</li>
+</ul>
+</li>
+<li>casual<ul>
+<li>优点：简洁，段落格式、。</li>
+<li>缺点：不够详细全面。</li>
+</ul>
+</li>
+<li>fully<ul>
+<li>优点： 详细编写所有步骤及各种变化，同时具有补充部分。</li>
+<li>缺点： 需要耗费大量时间，只针对其中少量具有重要意义的用例。</li>
+</ul>
+</li>
+</ol>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

@@ -16,19 +16,19 @@
     
     
 
-    <meta name="description" content="SpringMVC 学习报告15331010 曹思佳  Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性">
+    <meta name="description" content="SpringMVC 学习报告 Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性，极大地简化开发。理解这两">
 <meta name="keywords" content="homework,System&#39;s Analysis and Design,dramatic tickets">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringMVC学习报告 | Cicicigar-github">
 <meta property="og:url" content="http://yoursite.com/2018/04/14/SpringMVC学习报告/index.html">
 <meta property="og:site_name" content="Cicicigar-github">
-<meta property="og:description" content="SpringMVC 学习报告15331010 曹思佳  Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性">
+<meta property="og:description" content="SpringMVC 学习报告 Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性，极大地简化开发。理解这两">
 <meta property="og:image" content="https://pic3.zhimg.com/80/v2-4536e692de5413bf41a4a5c030f393bb_hd.jpg">
 <meta property="og:image" content="https://pic4.zhimg.com/80/v2-13c8c23b5e6953563f49f876e3bb1cc9_hd.jpg">
-<meta property="og:updated_time" content="2018-04-15T03:39:25.284Z">
+<meta property="og:updated_time" content="2018-04-22T03:56:03.979Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringMVC学习报告 | Cicicigar-github">
-<meta name="twitter:description" content="SpringMVC 学习报告15331010 曹思佳  Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性">
+<meta name="twitter:description" content="SpringMVC 学习报告 Spring: DI / AOPSpring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性，极大地简化开发。理解这两">
 <meta name="twitter:image" content="https://pic3.zhimg.com/80/v2-4536e692de5413bf41a4a5c030f393bb_hd.jpg">
     
     
@@ -179,8 +179,7 @@ classes that you can use:
   </header>
 
   <section id="post-content" class="article-content post">
-    <h3 id="SpringMVC-学习报告"><a href="#SpringMVC-学习报告" class="headerlink" title="SpringMVC 学习报告"></a>SpringMVC 学习报告</h3><p>15331010 曹思佳</p>
-<ol>
+    <h3 id="SpringMVC-学习报告"><a href="#SpringMVC-学习报告" class="headerlink" title="SpringMVC 学习报告"></a>SpringMVC 学习报告</h3><ol>
 <li><p>Spring: DI / AOP<br>Spring对应的关键词是DI（依赖注入）与AOP（面向切面编程），可以认为是一个以DI和AOP为核心Java Web一站式的集成（粘合）框架。<br>其中DI也称为IoC（控制发转）用于管理Java对象之间的依赖关系，AOP用于解耦业务代码和公共服务代码。DI和AOP能够让代码更加简单，具有良好的松耦合特性和可测试性，极大地简化开发。理解这两者是使用Spring框架的基础。<br>Spring框架对Java企业应用开发中的各类通用问题都进行了良好的抽象，因此也能够把应用各个层次所涉及的特定的功能和开发框架。Spring是一个极其优秀的一站式的Full-Stack集成框架，因此基于Spring核心，对Java应用开发中的各类通用问题几乎都提供了针对性的开发框架，比如你耳熟能详的Spring MVC，Spring Data。</p>
 </li>
 <li><p>Struct: MVC<br>Struct 是一个Java Web MVC开发框架。<br>Model，View和Controller的分开，是一种典型的关注点分离的思想，不仅使得代码复用性和组织性更好，使得Web应用的配置性和灵活性更好。</p>
