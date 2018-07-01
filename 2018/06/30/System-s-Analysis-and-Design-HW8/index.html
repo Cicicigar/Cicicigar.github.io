@@ -16,19 +16,17 @@
     
     
 
-    <meta name="description" content="描述软件架构与框架之间的区别与联系软件框架是面向某领域的、可复用的“半成品”软件，它实现了该领域的共性部分，并提供一系列定义良好的可变点以保证灵活性和可扩展性。可以说，软件框架是领域分析结果的软件化，是领域内最终应用系统的模板。软件框架至少包含以下组成部分： 一系列完成计算的模块，在此称为构件。 构件之间的关系与交互机制。 一系列可变点（也称热点，Hot-spots，或调整点）。   可变点的行">
+    <meta name="description" content="使用 ECB 实现 make reservation 用例的详细设计（包含用例简介，顺序图，类图）  将逻辑设计类图映射到实际项目框架的包图。用树形结构表述实现的包和类">
 <meta name="keywords" content="homework,System&#39;s Analysis and Design">
 <meta property="og:type" content="article">
 <meta property="og:title" content="System-s-Analysis-and-Design-HW8 | Cicicigar-github">
-<meta property="og:url" content="http://yoursite.com/2018/06/02/System-s-Analysis-and-Design-HW8/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/06/30/System-s-Analysis-and-Design-HW8/index.html">
 <meta property="og:site_name" content="Cicicigar-github">
-<meta property="og:description" content="描述软件架构与框架之间的区别与联系软件框架是面向某领域的、可复用的“半成品”软件，它实现了该领域的共性部分，并提供一系列定义良好的可变点以保证灵活性和可扩展性。可以说，软件框架是领域分析结果的软件化，是领域内最终应用系统的模板。软件框架至少包含以下组成部分： 一系列完成计算的模块，在此称为构件。 构件之间的关系与交互机制。 一系列可变点（也称热点，Hot-spots，或调整点）。   可变点的行">
-<meta property="og:image" content="https://raw.githubusercontent.com/Cicicigar/Cicicigar.github.io/master/pics/homework7.png">
-<meta property="og:updated_time" content="2018-07-01T06:04:45.879Z">
+<meta property="og:description" content="使用 ECB 实现 make reservation 用例的详细设计（包含用例简介，顺序图，类图）  将逻辑设计类图映射到实际项目框架的包图。用树形结构表述实现的包和类">
+<meta property="og:updated_time" content="2018-07-01T06:51:31.438Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="System-s-Analysis-and-Design-HW8 | Cicicigar-github">
-<meta name="twitter:description" content="描述软件架构与框架之间的区别与联系软件框架是面向某领域的、可复用的“半成品”软件，它实现了该领域的共性部分，并提供一系列定义良好的可变点以保证灵活性和可扩展性。可以说，软件框架是领域分析结果的软件化，是领域内最终应用系统的模板。软件框架至少包含以下组成部分： 一系列完成计算的模块，在此称为构件。 构件之间的关系与交互机制。 一系列可变点（也称热点，Hot-spots，或调整点）。   可变点的行">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/Cicicigar/Cicicigar.github.io/master/pics/homework7.png">
+<meta name="twitter:description" content="使用 ECB 实现 make reservation 用例的详细设计（包含用例简介，顺序图，类图）  将逻辑设计类图映射到实际项目框架的包图。用树形结构表述实现的包和类">
     
     
     
@@ -157,7 +155,7 @@ classes that you can use:
     
 
     <div class="post-meta">
-      <time datetime="2018-06-02" class="post-meta__date date">2018-06-02</time> 
+      <time datetime="2018-06-30" class="post-meta__date date">2018-06-30</time> 
 
       <span class="post-meta__tags tags">
 
@@ -179,33 +177,9 @@ classes that you can use:
 
   <section id="post-content" class="article-content post">
     <ul>
-<li>描述软件架构与框架之间的区别与联系<br>软件框架是面向某领域的、可复用的“半成品”软件，它实现了该领域的共性部分，并提供一系列定义良好的可变点以保证灵活性和可扩展性。可以说，软件框架是领域分析结果的软件化，是领域内最终应用系统的模板。<br>软件框架至少包含以下组成部分：<ol>
-<li>一系列完成计算的模块，在此称为构件。</li>
-<li>构件之间的关系与交互机制。</li>
-<li>一系列可变点（也称热点，Hot-spots，或调整点）。  </li>
-<li>可变点的行为调整机制。</li>
-</ol>
+<li><p>使用 ECB 实现 make reservation 用例的详细设计（包含用例简介，顺序图，类图）</p>
 </li>
-</ul>
-<p>　　软件构架和软件架构也就是通常所说的软件体系结构。<br>　　体系结构一般包括三个部分:<br>　　1. 构件：用于描述计算。<br>　　2. 连接器：用于描述构件的连接部分。<br>　　3. 配置,将构件和连接器组成一个有机整体。<br>　　<br>　　体系结构与框架（Framework)的区别与联系如下：<br>　　1. 呈现形式不同：体系结构的呈现形式是一个设计规约，而框架则是程序代码。<br>　　2. 目的不同：体系结构的首要目的大多是指导一个软件系统的实施与开发；而框架的首要目的是为复用。因此，一个框架可有其体系结构，用于指导该框架的开发，反之不然。</p>
-<ul>
-<li><p>以你的项目为案例 </p>
-<ul>
-<li>绘制三层架构模型图，细致到分区<br><img src="https://raw.githubusercontent.com/Cicicigar/Cicicigar.github.io/master/pics/homework7.png" alt="架构模型图"></li>
-<li>结合你程序的结构，从程序员角度说明三层架构给开发者带来的便利<br>使程序结构清晰，能够清晰划分各个层次，提高可维护性与并发开发性。<br>接口设计符合对扩展开发，对修改关闭的原则，使系统更加安全，且利于标准化。</li>
-</ul>
-</li>
-<li><p>研究 VUE 与 Flux 状态管理的异同<br>异：</p>
-<ol>
-<li>Vuex在Flux的仓库管理机制基础上进行改进，更加简单清晰。</li>
-<li>Vuex是单向数据流，而Flux有返回机制。</li>
-<li>Vuex有自动渲染的功能，所以不需要更新</li>
-</ol>
-<p>同：</p>
-<ol>
-<li>使用store存储状态。</li>
-<li>有数据驱动、可组合搭建的视图组件。</li>
-</ol>
+<li><p>将逻辑设计类图映射到实际项目框架的包图。用树形结构表述实现的包和类</p>
 </li>
 </ul>
 
